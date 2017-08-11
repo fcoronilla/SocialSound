@@ -9,16 +9,18 @@ Para el Deploy de la aplicación por favor de revisar la seccion "Deployment".
 
 ### Prerequisites
 
--NodeJS
--MongoDB
--Express
+* NodeJS
+* MongoDB
+* Express
 
 ### Installing
 
--Clonar el repositorio desde https://github.com/fcoronilla/SocialSound.git
--Levantar el server de NodeJS
--Abrir un browser con dirección: www.localhost:8080 
--Happy Code!
+1. Fork el proyecto desde Clonar el repositorio desde https://github.com/fcoronilla/SocialSound.git
+2. Crear un feature branch: `git checkout -b my-new-feature`
+3. Commit de los cambios: `git commit -am 'Add some feature'`
+4. Push del feature branch: `git push origin my-new-feature`
+5. Colocar un nuevo "pull request"
+6. ¡Happy Code!
 
 ## Deployment
 
@@ -47,4 +49,4 @@ Version 1.0 Alpha
 
 ## License
 
-This project is not licensed under the MIT License
+Este proyecto no esta bajo las reglas del MIT License
