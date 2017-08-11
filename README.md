@@ -24,11 +24,11 @@ Para el Deploy de la aplicación por favor de revisar la seccion "Deployment".
 
 ## Deployment
 
--Conseguir un hosting
--Registrar el dominio www.socialsound.com.ar
--Deployar el servicio 
--Crear la base de datos de MongoDB
--Hostear la aplicacion en un server
+1. Conseguir un hosting
+2. Registrar el dominio www.socialsound.com.ar
+3. Deployar el servicio
+4. Crear la base de datos de MongoDB
+5. Hostear la aplicacion en un server
 
 ## Built With
 
