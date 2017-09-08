@@ -7,6 +7,13 @@ Aplicación Web desarrollada con el objetivo de que los usuarios puedan crear, c
 Estas instrucciones van a darles por resultado una copia del proyecto para que puedan correr en sus ambientes locales y puedan desarrollar o testear la aplicación. 
 Para el Deploy de la aplicación por favor de revisar la seccion "Deployment".
 
+## RESTFul api
+
+//GET
+GET 'api/producers/' - Devuelve todos los Productores
+
+
+
 ### Prerequisites
 
 * NodeJS
