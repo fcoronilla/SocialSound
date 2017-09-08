@@ -11,6 +11,7 @@ Para el Deploy de la aplicación por favor de revisar la seccion "Deployment".
 
 //GET
 GET 'api/producers/' - Devuelve todos los Productores
+GET ... seguir aca
 
 
 
