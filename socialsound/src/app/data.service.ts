@@ -11,8 +11,13 @@ export class DataService {
     constructor(private _http: Http) { }
 
     getUsers() {
-        return this._http.get('/users')
-            .map(result => this.result = result.json().data);
+        this._http.get('/users').subscribe((data) => {
+            this.result = data.json();
+        });
+    }
+
+    getUserData() {
+        return this.result;
     }
 
 }

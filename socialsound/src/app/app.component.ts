@@ -6,17 +6,24 @@ import { DataService } from './data.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
   title = 'SocialSound';
 
-  // users: Array<any>;
-  users: any[];
+  users: Array<any>;
 
   constructor(private _dataService: DataService) {
+    this.init();
 
-    this._dataService.getUsers()
-      .subscribe(res => this.users = res);
+  }
 
+  init() {
+    this._dataService.getUsers();
+
+  }
+
+  getUser() {
+    return this._dataService.getUserData();
   }
 
 }
