@@ -1,8 +1,27 @@
-<h1>Out MongoDB is working!</h1>
-
 <div *ngIf="getUser()">
   <h2>{{ title }}</h2>
-  <ul>
-    <li *ngFor="let user of getUser()">{{ user.userName }}</li>
-  </ul>
+  <table>
+    <tr>
+      <th>Nombre</th>
+      <th>Password</th>
+      <th>Eliminar</th>
+      <th>Actualizar</th>
+    </tr>
+    <tr *ngFor="let user of getUser()">
+      <td>{{ user.userName }}</td>
+      <td>{{ user.password }}</td>
+      <td>
+        <button class="btn btn-danger" type="button" (click)="deleteUser(user._id)">DELETE</button>
+      </td>
+      <td>
+        <button class="btn btn-info" type="button" (click)="updateUser(user._id)">UPDATE</button>
+      </td>
+    </tr>
+  </table>
+</div>
+<div>
+  <h1>Nuevo Usuario</h1>
+  <input type="text" id="name" name="name" class="form-control">
+  <input type="text" id="password" name="password" class="form-control">
+  <button class="btn btn-info" type="button" (click)="saveUser(user)">ADD</button>
 </div>

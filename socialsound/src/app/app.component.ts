@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { DataService } from './data.service';
+import { UserService } from './user.service';
 
 @Component({
   selector: 'app-root',
@@ -12,18 +12,30 @@ export class AppComponent {
 
   users: Array<any>;
 
-  constructor(private _dataService: DataService) {
+  constructor(private userService: UserService) {
     this.init();
 
   }
 
   init() {
-    this._dataService.getUsers();
+    this.userService.getAllUsers();
 
   }
 
   getUser() {
-    return this._dataService.getUserData();
+    return this.userService.getUserData();
   }
 
+  deleteUser(id) {
+    this.userService.deleteUser(id);
+  }
+
+  saveUser() {
+
+  }
+
+  updateUser(id) {
+    const x = this.userService.getUserById(id);
+    this.userService.updateUser(id, x);
+  }
 }
